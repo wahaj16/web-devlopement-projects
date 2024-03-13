@@ -1,0 +1,102 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+
+}
+.img-fluid{
+
+    width: 100%;
+    margin-top: 20px;
+}
+.card-final{
+
+margin-top: 40px;
+
+}
+.welcome{
+    position: relative;
+    margin: 20px;
+  
+    justify-content: center;
+    border: 1px solid rgb(28, 124, 145);
+     box-shadow: 0px 0px 30px 10px rgb(49, 156, 150);
+    
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px) rotate(-200deg);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0) rotate(0deg);
+	}
+}
+
+.head {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+  animation-name: myAnim;
+    animation-duration: 3s;
+  
+    transform: translate(-50%, -50%);
+
+}
+.stall {
+    height: 90vh;
+    width: 100%;
+}
+
+.stall img{
+    height: 80%;
+}
+.img1{
+    max-height: 200px;
+    z-index: -100;
+
+}
+.head-text{
+    position: absolute;
+    top: 60%;
+  
+  
+    text-align: center;
+
+}
+body{
+    background-color: aqua;
+}
+.welcome{
+    display: flex;
+}
+.contactus{
+display: flex;
+justify-content: center;
+background-color:black ;
+
+}
+.companyInfo{
+display: flex;
+flex-direction: column;
+
+}
+.headoffice{
+
+    display: flex;
+}
+.head{
+
+    flex-basis: 33%;
+    flex-grow: 10;
+}
+.a{
+    height:90vh
+}
+.name{
+    width: 300px;
+}
