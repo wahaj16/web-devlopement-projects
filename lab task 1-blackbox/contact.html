@@ -74,6 +74,7 @@
 
     .error {
         color: red;
+        font-size: 14px;
     }
 </style>
 </head>
@@ -85,16 +86,65 @@
     <form id="contactForm">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name">
+        <span class="error" id="nameError"></span>
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email">
+        <span class="error" id="emailError"></span>
 
         <label for="subject">Subject:</label>
         <input type="text" id="subject" name="subject">
+        <span class="error" id="subjectError"></span>
 
         <label for="message">Message:</label>
         <textarea id="message" name="message"></textarea>
+        <span class="error" id="messageError"></span>
 
         <input type="submit" value="Submit">
     </form>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('#contactForm').submit(function(e){
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var subject = $('#subject').val();
+        var message = $('#message').val();
+        var error = false;
+        
+        if(name == ''){
+            $('#nameError').html('Name is required.');
+            error = true;
+        } else {
+            $('#nameError').html('');
+        }
+        if(email == ''){
+            $('#emailError').html('Email is required.');
+            error = true;
+        } else {
+            $('#emailError').html('');
+        }
+        if(subject == ''){
+            $('#subjectError').html('Subject is required.');
+            error = true;
+        } else {
+            $('#subjectError').html('');
+        }
+        if(message == ''){
+            $('#messageError').html('Message is required.');
+            error = true;
+        } else {
+            $('#messageError').html('');
+        }
+        
+        if(error){
+            e.preventDefault();
+        }
+    });
+});
+</script>
+
+</body>
+</html>

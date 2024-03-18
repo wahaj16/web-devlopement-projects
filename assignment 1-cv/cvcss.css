@@ -254,7 +254,9 @@ border-width: 3px;}
 }
 .institutes{
 
-  display: flex; 
+  display: flex;
+  justify-content: center; 
+  
 
 }
 .college{
@@ -263,14 +265,32 @@ border-width: 3px;}
     justify-content: center;
     align-items: center;
     min-width: 33%;
+    padding-top: 3%;
    
 }
+.University{
+padding-top: 3%;
+
+}
 .arrow{
- 
+
 height: 40px;
 
 }
 .ab{
     padding-top: 30px;
-    m
+    padding-left: 8%;
+    
+}
+.abc{
+    padding-top: 6%;
+    padding-right: 10%;
+
+}
+#aaa{
+
+    margin-top: 3%;
+}
+h2{
+    margin-top: 5%;
 }
