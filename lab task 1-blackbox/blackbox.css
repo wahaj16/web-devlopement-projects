@@ -112,6 +112,8 @@ flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    
+
 }
 
 .footer {
@@ -267,3 +269,35 @@ p {
     color: #666;
     margin-bottom: 20px;
 }
+#client{
+    width:2%;
+    height: 2%;
+    overflow: hidden;
+    margin-top: 0px;
+    outline: auto;
+    
+}
+#client img{
+    width:2%;
+    height: 2%;
+    overflow: hidden;
+    margin-top: 0px;
+}
+.textile{
+
+    height: 50%;
+}
+
+.navcontainer {
+    
+    height: 10%; /* Adjust height as needed */
+    overflow: hidden;
+  }
+  
+  .navbar {
+    position: sticky;
+    top: 0; /* Sticky to the top */
+   
+    /* Add other necessary styles for your carousel */
+  }
+  corous
