@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Visitor by Phone Number</title>
+  <link rel="stylesheet" href="/stylesheets/searchByPhone.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/images/company-logo.png" alt="Company Logo" class="logo">
+    </header>
+    <main>
+      <h1>Search Visitor by Phone Number</h1>
+      <form id="searchForm">
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" required>
+        </div>
+        <button type="submit">Search</button>
+      </form>
+      <div id="visitorDetails" class="hidden">
+        <h2>Visitor Details</h2>
+        <p><strong>Name:</strong> <span id="visitorName"></span></p>
+        <p><strong>Occupation:</strong> <span id="visitorOccupation"></span></p>
+        <p><strong>Designation:</strong> <span id="visitorDesignation"></span></p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 Blackbox All rights reserved</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('searchForm').addEventListener('submit', async function(event) {
+      event.preventDefault();
+      const phoneNumber = document.getElementById('phoneNumber').value;
+      const response = await fetch(`/searchVisitor/${phoneNumber}`);
+      if (response.ok) {
+        const visitor = await response.json();
+        console.log(visitor);
+        document.getElementById('visitorName').innerText = visitor.name;
+        document.getElementById('visitorOccupation').innerText = visitor.occupation;
+        document.getElementById('visitorDesignation').innerText = visitor.designation;
+        document.getElementById('visitorDetails').classList.remove('hidden');
+      } else {
+        alert('Visitor not found');
+      }
+    });
+  </script>
+</body>
+</html>

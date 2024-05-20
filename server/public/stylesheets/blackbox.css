@@ -1,0 +1,302 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+
+}
+.img-fluid{
+
+    width: 100%;
+    margin-top: 20px;
+}
+.card-final{
+
+margin-top: 40px;
+
+}
+.welcome{
+    position: relative;
+    margin: 20px;
+  
+    justify-content: center;
+    border: 1px solid rgb(28, 124, 145);
+     box-shadow: 0px 0px 30px 10px rgb(49, 156, 150);
+    
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px) rotate(-200deg);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0) rotate(0deg);
+	}
+}
+
+.head {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+  animation-name: myAnim;
+    animation-duration: 3s;
+  
+    transform: translate(-50%, -50%);
+
+}
+.stall {
+    height: 90vh;
+    width: 100%;
+}
+
+.stall img{
+    height: 80%;
+}
+.img1{
+    max-height: 200px;
+    z-index: -100;
+
+}
+.head-text{
+    position: absolute;
+    top: 60%;
+  
+  
+    text-align: center;
+
+}
+body{
+    font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+        background-image: url(straws.png);
+}
+.welcome{
+    display: flex;
+}
+.contactus{
+display: flex;
+justify-content: center;
+background-color:black ;
+
+}
+.companyInfo{
+display: flex;
+flex-direction: column;
+
+}
+.headoffice{
+
+    display: flex;
+}
+.head{
+
+    flex-basis: 33%;
+    flex-grow: 10;
+}
+.a{
+    height:90vh
+}
+.name{
+    width: 300px;
+}
+
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+
+}
+
+.footer {
+    background-color: #080808;
+   
+    color: #fff;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-address,
+.footer-contact,
+.footer-button {
+    flex-basis: 30%;
+}
+
+.footer-address h3,
+.footer-contact h3 {
+    margin-bottom: 10px;
+}
+
+.footer-address p,
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+
+
+}
+
+.contact-button:hover {
+    background-color: #e65100;
+}
+.footer-button{
+    justify-content: center;
+    text-align: center;
+    margin-top: 2%;
+
+    
+}
+.footer-bottom {
+    text-align: center;
+    background-color: #333;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 2%;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-bottom p:last-child {
+    margin-top: 10px;
+}
+.cards{
+    margin: 5%;
+}
+.container1 {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    /* border: 2px solid #4caf50; 
+    border-radius: 10px; 
+    background-color: #fff;  */
+   
+}
+
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+.top-heading {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.client-logos {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.client-logos li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.client-logos img {
+    max-width: 100px;
+    height: auto;
+}
+
+.clients-heading {
+    font-size: 38px;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+ 
+}
+
+.warm-statement {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+#client{
+    width:2%;
+    height: 2%;
+    overflow: hidden;
+    margin-top: 0px;
+    outline: auto;
+    
+}
+#client img{
+    width:2%;
+    height: 2%;
+    overflow: hidden;
+    margin-top: 0px;
+}
+.textile{
+
+    height: 50%;
+}
+
+.navcontainer {
+    
+    height: 10%; /* Adjust height as needed */
+    overflow: hidden;
+  }
+  
+  .navbar {
+    position: sticky;
+    top: 0; /* Sticky to the top */
+   
+    /* Add other necessary styles for your carousel */
+  }

@@ -113,35 +113,22 @@ $(document).ready(function(){
         var subject = $('#subject').val();
         var message = $('#message').val();
         var error = false;
-        
-        if(name == ''){
-            $('#nameError').html('Name is required.');
-            error = true;
-        } else {
-            $('#nameError').html('');
-        }
-        if(email == ''){
-            $('#emailError').html('Email is required.');
-            error = true;
-        } else {
-            $('#emailError').html('');
-        }
-        if(subject == ''){
-            $('#subjectError').html('Subject is required.');
-            error = true;
-        } else {
-            $('#subjectError').html('');
-        }
-        if(message == ''){
-            $('#messageError').html('Message is required.');
-            error = true;
-        } else {
-            $('#messageError').html('');
-        }
-        
-        if(error){
-            e.preventDefault();
-        }
+
+        console.log(name,message)
+
+        e.preventDefault();
+        $.ajax({
+            url: "https://localhost:5000/user",
+            method: "POST",
+            data: { name, email,subject,message },
+            success: function () {
+                console.log("Message send")
+            },
+            error: function (error) {
+              console.error("Error creating story:", error);
+            },
+          });
+
     });
 });
 </script>
