@@ -1,0 +1,162 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #007bff;
+  }
+  
+  header .logo {
+    height: 60px;
+  }
+  
+  /* Main content styles */
+  main {
+    padding: 20px 0;
+  }
+  
+  h1 {
+    font-size: 28px;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  table th, table td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table tr:hover {
+    background-color: #ddd;
+  }
+  
+  /* Pagination styles */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .pagination a {
+    margin: 0 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    color: #007bff;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .pagination a.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  .pagination a:hover {
+    background-color: #0056b3;
+    color: #fff;
+  }
+  
+
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid #007bff;
+    margin-top: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+    color: #666;
+  }
+  /* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #fff;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  footer .social-icons {
+    margin-top: 10px;
+  }
+  
+  footer .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  footer .social-icons a:hover {
+    color: #ffdd57;
+  }
+  
+  footer .back-to-top {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #ffdd57;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  footer .back-to-top:hover {
+    background-color: #333;
+    color: #ffdd57;
+  }
+  
+  
+  
+  
