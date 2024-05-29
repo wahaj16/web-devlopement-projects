@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visited Products</title>
+  <link rel="stylesheet" href="/stylesheets/visited-products.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Visited Products</h1>
+    <ul class="product-list">
+      <% products.forEach(product => { %>
+        <li class="product-item">
+          <h2><%= product.name %></h2>
+          <p><%= product.description %></p>
+          <p>Price: $<%= product.price %></p>
+          <p>Category: <%= product.category %></p>
+          <p>Featured: <%= product.isFeatured ? 'Yes' : 'No' %></p>
+          <a href="/products/<%= product._id %>">View Product</a>
+        </li>
+      <% }) %>
+    </ul>
+  </div>
+</body>
+</html>
