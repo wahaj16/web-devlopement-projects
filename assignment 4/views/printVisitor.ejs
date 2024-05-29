@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visitor Details</title>
+  <link rel="stylesheet" href="/stylesheets/printVisitor.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/images/name1.jpeg" alt="Company Logo" class="logo">
+      <img src="/images/mls.jpeg" alt="Event Logo" class="event-logo">
+    </header>
+    <main>
+      <h1>Visitor Details</h1>
+      <table class="visitor-details">
+        <tr>
+          <th>Name:</th>
+          <td><%= visitor.name %></td>
+        </tr>
+        <tr>
+          <th>Occupation:</th>
+          <td><%= visitor.occupation %></td>
+        </tr>
+        <tr>
+          <th>Designation:</th>
+          <td><%= visitor.designation %></td>
+        </tr>
+        <tr>
+          <th>Phone Number:</th>
+          <td><%= visitor.phone %></td>
+        </tr>
+        <tr>
+          <th>Email:</th>
+          <td><%= visitor.email %></td>
+        </tr>
+        <tr>
+          <th>Barcode:</th>
+          <td>
+            <img src="data:image/png;base64,<%= visitor.barcode %>" alt="Barcode">
+          </td>
+        </tr>
+      </table>
+    </main>
+    <footer>
+      <p>&copy; 2024 Blackbox All rights reserved</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Details Form</title>
+  <link rel="stylesheet" href="/stylesheets/visiterForm.css">
+  
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/images/name1.jpeg" alt="Company Logo" class="logo">
+    </header>
+    <main>
+      <h1>Visitor Registration Form</h1>
+      <form id="userForm" method="post" action="/visitorForm.html">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="Phone">Phone:</label>
+          <input type="tel" id="Phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="Occupation">Occupation:</label>
+            <input type="Occupation" id="Occupation" name="occupation" required>
+          </div>
+          <div class="form-group">
+            <label for="Designation">Designation:</label>
+            <input type="Designation" id="Designation" name="designation" required>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2024 Blackbox All rights reserved</p>
+    </footer>
+  </div>
+</body>
+</html>

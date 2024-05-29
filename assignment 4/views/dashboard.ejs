@@ -1,0 +1,129 @@
+<%- include('partials/header') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    header img {
+      width: 150px;
+    }
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+    .stat {
+      flex: 1;
+      margin: 0 10px;
+      padding: 20px;
+      background-color: #e7e7e7;
+      text-align: center;
+      border-radius: 10px;
+    }
+    .stat h3 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .stat p {
+      font-size: 20px;
+    }
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .actions button {
+      flex: 1;
+      margin: 0 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4caf50;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .actions button:hover {
+      background-color: #45a049;
+    }
+    .table-container {
+      overflow-x: auto;
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+ 
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/images/name1.jpeg" alt="Company Logo">
+      <h1>Admin Dashboard</h1>
+      <a href="/logout">Logout</a>
+    </header>
+
+    <div class="actions">
+      <a href="/view.html" class="button">View Registered Visitors</a>
+      <a href="/visitorForm.html" class="button">Visitor Registration Form</a>
+
+      <a href="/searchByPhone.html" class="button">Search by phone</a>
+      
+    </div>
+
+    
+  
+   
+
+  
+
+    <footer>
+      <p>&copy; 2024 Blackbox. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    function showSection(sectionId) {
+      document.getElementById('events').style.display = 'none';
+      document.getElementById('users').style.display = 'none';
+      document.getElementById('analytics').style.display = 'none';
+      document.getElementById(sectionId).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
+<%- include('partials/footer') %>
